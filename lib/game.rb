@@ -5,7 +5,8 @@ class RockPaperScissors
       return 'Player 1 wins'
     elsif player1 == 'scissors' && player2 == 'paper'
       return 'Player 1 wins'
+    else
+      return "Paper beats Rock"
     end
   end
 end
-

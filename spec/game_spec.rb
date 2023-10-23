@@ -16,4 +16,8 @@ describe RockPaperScissors do
   it 'Scissors beats Paper' do
     expect(game.play('scissors', 'paper')).to eq('Player 1 wins')
   end
+
+  it 'Paper beats Rock' do
+    expect(game.play('paper', 'rock')).to eq('Paper beats Rock')
+  end
 end
