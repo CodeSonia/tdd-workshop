@@ -18,3 +18,10 @@ class RockPaperScissors
 
   end
 end
+
+# Create a new instance of the game:
+game = RockPaperScissors.new
+
+puts game.play("rock", "scissors")  # Output: "Player 1 wins"
+puts game.play("paper", "rock")     # Output: "Player 1 wins"
+puts game.play("rock", "rock")      # Output: "You drew!"
