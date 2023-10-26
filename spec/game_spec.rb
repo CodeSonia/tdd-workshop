@@ -18,6 +18,6 @@ describe RockPaperScissors do
   end
 
   it 'Paper beats Rock' do
-    expect(game.play('paper', 'rock')).to eq('Paper beats Rock')
+    expect(game.play('paper', 'rock')).to eq('Player 1 wins')
   end
 end

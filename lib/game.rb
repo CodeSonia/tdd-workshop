@@ -1,12 +1,20 @@
 class RockPaperScissors
 
   def play(player1, player2)
-    if player1 == 'rock' && player2 == 'scissors'
-      return 'Player 1 wins'
-    elsif player1 == 'scissors' && player2 == 'paper'
-      return 'Player 1 wins'
+
+    rules = {
+      "rock" => "scissors",
+      "scissors" => "paper",
+      "paper" => "rock"
+    }
+
+    if player1 == player2
+      return "You drew!"
+    elsif rules[player1] == player2
+      return "Player 1 wins"
     else
-      return "Paper beats Rock"
+      return "Player 2 wins"
     end
+
   end
 end
